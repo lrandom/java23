@@ -5,55 +5,54 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int age = 18;
-        if (age >= 18) {
-            System.out.println("Bạn đã đủ tuổi");
+        String names[] = new String[10];
+        names[0] = "Luan";
+        names[1] = "Nam";
+
+        System.out.println(names[0]);
+        System.out.println(names[3]);
+
+        int ages[] = new int[10];
+        ages[0] = 20;
+
+
+        String countries[] = new String[]{
+                "Viet Nam", "USA", "Japan"};
+
+        for (int i = 0; i < countries.length; i++) {
+            System.out.println(countries[i]);
         }
 
-        if (age >= 20) {
-            System.out.println("Bạn đã đủ tuổi");
-        } else {
-            System.out.println("Bạn chưa đủ tuổi");
+        for (String country : countries
+        ) {
+            System.out.println(country);
         }
 
-        if (age >= 6 && age <= 12) {
-            System.out.println("Bạn là trẻ em");
-        } else if (age >= 13 && age <= 17) {
-            System.out.println("Bạn là thiếu niên");
-        } else if (age >= 18 && age <= 30) {
-            System.out.println("Bạn là thanh niên");
-        } else if (age >= 31 && age <= 50) {
-            System.out.println("Bạn là trung niên");
-        }
 
-        switch (age) {
-            case 6:
-                ///
-                System.out.println("Bạn còn bé quá");
-                break;
+        //mảng hai chiều - cách 1
+        String provinces[][] = new String[3][4];//3 hàng 4 cột
+        provinces[0][0] = "Hà Nội";
+        provinces[0][1] = "tp.Hồ Chí Minh";
+        provinces[0][2] = "Đà Nẵng";
+        provinces[0][3] = "Hải Phòng";
+        provinces[1][0] = "California";
+        provinces[1][1] = "Texas";
 
-            case 7:
-                //
-                System.out.println("Bạn hơi lớn");
-                break;
-
-            case 18:
-                //
-                System.out.println("BẠN ĐÃ ĐỦ TUỔI");
-                break;
-
-            default:
-                System.out.println("Không biết xử lý ntn");
-        }
-
-        //nested if - if lồng nhau
-        /*if () {
-            if () {
-                if () {
-
-                }
+        for (int i = 0; i < provinces.length; i++) {
+            for (int j = 0; j < provinces[i].length; j++) {
+                System.out.println(provinces[i][j]);
             }
-        }*/
+        }
+
+
+        String[][] list = new String[][]{
+                {"A", "B"},
+                {"C", "D"},
+                {"E", "F"}
+        };
+        System.out.println(list[0][1]);
+        System.out.println(list[2][1]);
+
 
     }
 }
