@@ -1,6 +1,7 @@
 package com.niit.java23;
 
 import com.niit.java23.bt.Calculator;
+import com.niit.java23.bt.Circle;
 import com.niit.java23.bt.Rectangle;
 import com.niit.java23.bt.Square;
 import com.niit.java23.domains.Human;
@@ -20,7 +21,7 @@ public class Main {
         square.setEdgeWidth(side);
         System.out.println("Diện tích hình vuông là " + square.getArea());*/
 
-        Rectangle rectangle = new Rectangle();
+        /*Rectangle rectangle = new Rectangle();
         System.out.println("Vui long nhap vao do dai canh 1 cua rectangle");
         Scanner scanner = new Scanner(System.in);
         float side = scanner.nextFloat();
@@ -28,6 +29,11 @@ public class Main {
         System.out.println("Vui long nhap vao do dai canh 2 của reactangle");
         side = scanner.nextFloat();
         rectangle.setEdgeTwo(side);
-        System.out.println("Diện tích hình CN là " + rectangle.getArea());
+        System.out.println("Diện tích hình CN là " + rectangle.getArea());*/
+
+        Circle circle = new Circle();
+        circle.setRadius(10);
+        double area = circle.getArea();
+        System.out.println("Dien tich hinh tron la" + area);
     }
 }
