@@ -1,5 +1,8 @@
 package com.niit.java23;
 
+import com.niit.java23.abstraction.House;
+import com.niit.java23.abstraction.TropicalHouse;
+import com.niit.java23.abstraction.Villa;
 import com.niit.java23.domains.Human;
 
 import java.util.Scanner;
@@ -7,21 +10,17 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Human luan = new Human("brown","1.72","75","Luan",1992);//tạo ra một đối tượng từ lớp Human// instance of Class
-        //instance == doi tuong
-        luan.walk();
-        luan.eat();
-        luan.learn();
+        getHouse(new Villa());
 
-        Human nam = new Human();//tạo ra một đối tưọng từ lớp Human
-        nam.name = "Nam";
-        luan.eyeColor = "black";
-        nam.walk();
-        nam.eat();
-        nam.learn();
+        House house = new House() {
+            @Override
+            public void printHouse() {
+                System.out.println("print red");
+            }
+        };
+    }
 
-        Human.className = "Human";
-        Human.printClasName();
-
+    public static void getHouse(House villa) {
+        villa.printHouse();
     }
 }
