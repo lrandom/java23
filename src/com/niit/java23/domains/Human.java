@@ -2,12 +2,12 @@ package com.niit.java23.domains;
 
 public class Human {
     public static String className;
-    private String eyeColor;
-    private String height;
-    private String weight;
-    private String name;
-    private int yearOfBirth;
-    private  String job ="Teacher";
+    public String eyeColor;
+    public String height;
+    public String weight;
+    public String name;
+    public int yearOfBirth;
+    public  String job ="Teacher";
 
     public Human() {
 
