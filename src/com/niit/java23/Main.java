@@ -20,11 +20,14 @@ public class Main {
 
         try {
             //System.out.println(numbers[10]);
-            System.out.println(10 / 0);
+            //System.out.println(10 / 0);
+            System.out.println("ABCD");
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Bạn đã truy cập vượt quá số phần tử trong mảng");
         } catch (Exception e) {
             System.out.println("Lỗi gì đó ko xác định");
+        } finally {
+            System.out.println("Chạy vào hết mọi thứ");
         }
 
         System.out.println("Hello");

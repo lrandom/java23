@@ -1,7 +1,12 @@
-1. Cho hai lớp Student và Transporter, hãy viết chương trình thể hiện mối quan hệ giữa student và transporter như sau 
-a, Từ đối tượng student, hãy cho biết student đó đi học bằng transporter gì? 
-b, Từ đối tượng transporter lấy ra từ student, hãy cho biết phương tiện đó của hãng nào
+1, Viết chương trình nhập vào hai số,
+nếu như người dùng cố tình nhập các cái chữ số mà không phải là số thì hãy thông báo và bắt người dùng nhập lại
 
-2. Cho một lớp trừu tượng Car với các phương thức abstract sau: printColor, setupWheel, setupEngine và một phương thức non abstract getCarInfo
-   a,Hãy viết chương trình tạo ra ba lớp con từ lớp car trên và cài đặt các phương thức tương ứng
-   b,Tạo các đối tượng từ các lớp trên và gọi phương thức getCarInfo(), khi gọi phương thức getCarInfo() thì cần phải in ra được màu sơn, loại lốp và loại động cơ của đối tượng
+2, Viết chương trình mô phỏng máy ATM với các chức năng sau 
+   - Account (accountNumber, fullName,pin, balance)
+   [
+      Account, Account,Account
+   ]
+   - Đăng nhập vào tk: số tk và mk, so sánh nếu có cái tk và mk trùng với 1 tài khoản trong mảng thì đưa ra thông báo: đăng nhập thành công
+    1.Rút tiền: nhập vào số tiền, trừ tiền trong tài khoản và thông báo số tiền còn lại, (bắt lỗi exception nếu nhập vào chữ hoặc là số tiền lớn hơn số tài trong TK)
+    2.Truy vấn tài khoản: in ra số tiền trong tk 
+    3.Thoát: thoát khỏi chương trình
