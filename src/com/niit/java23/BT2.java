@@ -20,9 +20,9 @@ public class BT2 {
         scanner = new Scanner(System.in);
         pin = scanner.nextLine();
 
-        for (Account accountItem :accounts
-             ) {
-            if(accountItem.getAccountNumber().equals(account) && accountItem.getPin().equals(pin)){
+        for (Account accountItem : accounts
+        ) {
+            if (accountItem.getAccountNumber().equals(account) && accountItem.getPin().equals(pin)) {
                 authAccount = accountItem;
                 break;
             }
@@ -30,8 +30,7 @@ public class BT2 {
 
         if (authAccount != null) {
             //xử lý
-    
-        }else{
+        } else {
             System.out.println("Tai khoan hoac mã pin khong dung");
         }
 
