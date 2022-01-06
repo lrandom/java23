@@ -1,14 +1,12 @@
-1, Viết chương trình nhập vào hai số, tính tổng hai số và in ra màn hình, nếu như người dùng cố tình nhập các chữ số mà không phải là số thì hãy thông
-báo và bắt người dùng nhập lại
+1, Viết chương trình cho phép nhập dữ liệu vào từ một file, trong file đó sẽ có các đường dẫn ảnh trên mỗi dòng 
+   Nhập dữ liệu vào và tiến hành đọc các đường dẫn ảnh và download các ảnh đó về máy tính
 
-2, Viết chương trình mô phỏng máy ATM với các chức năng sau
+2, Viết chương trình quản lý nhân viên với lớp Employee(id,name,age,salary), cho lưu trữ tối đa 100 nhân viên 
+   Tạo ra một menu với các chức năng sau
+   a, Cho phép nhập nhân viên mới vào hệ thống
+   b, Tìm và hiển thị thông tin nhân viên có lương cao nhất
+   c, Tìm và hiển thị thông tin nhân viên có lương thấp nhất
+   d, Sắp xếp nhân viên theo lương tăng dần 
+   e, Hiển thị danh sách nhân viết
 
-- Account(accountNumber, fullName,pin, balance)
-  [
-  Account, Account,Account
-  ]
-  1.Đăng nhập vào tk: số tk và mk, so sánh nếu có cái tk và mk trùng với 1 tài khoản trong mảng thì đưa ra thông báo: đăng
-  nhập thành công 1.Rút tiền: nhập vào số tiền, trừ tiền trong tài khoản và thông báo số tiền còn lại, (bắt lỗi
-  exception nếu nhập vào chữ hoặc là số tiền lớn hơn số tài trong TK)
-  2.Truy vấn tài khoản: in ra số tiền trong tk
-  3.Thoát: thoát khỏi chương trình
+Yêu cầu là dữ liệu của nhân viên sẽ phải được lưu trữ trong file Employee.dat
