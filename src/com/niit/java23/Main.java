@@ -1,36 +1,51 @@
 package com.niit.java23;
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        /*try {
-            FileInputStream fis = new FileInputStream("/Users/lrandom/Desktop/data1.txt");
-        } catch (IOException e) {
-            //e.printStackTrace();
-            //System.out.println(   e.getMessage());
-            System.out.println("KHÔNG TÌM THẤY FILE HỆ THỐNG");
-        }
+/*        MyThread t1 = new MyThread("Thread 1");//new
+        MyThread t2 = new MyThread("Thread 2");//new
+        
+        t1.start();//runable
+        t2.start();//runable*/
 
-        System.out.println("Hello");*/
+        Thread t1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Thread 1  is running");
+                for (int i = 0; i < 10; i++) {
+                    System.out.println(i);
+                    try {
+                        Thread.sleep(1000);
+                    } catch (Exception e) {
+                    }
+                }
+            }
+        });
 
-        int[] numbers = new int[]{1, 2, 3, 4};
 
-        try {
-            //System.out.println(numbers[10]);
-            //System.out.println(10 / 0);
-            System.out.println("ABCD");
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Bạn đã truy cập vượt quá số phần tử trong mảng");
-        } catch (Exception e) {
-            System.out.println("Lỗi gì đó ko xác định");
-        } finally {
-            System.out.println("Chạy vào hết mọi thứ");
-        }
+        Thread t2 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Thread 2  is running");
+                for (int i = 0; i < 10; i++) {
+                    System.out.println(i);
+                    try {
+                        Thread.sleep(1000);
+                    } catch (Exception e) {
+                    }
+                }
+            }
+        });
 
-        System.out.println("Hello");
+        t1.start();
+        t2.start();
+
     }
 
 }
