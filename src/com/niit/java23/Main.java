@@ -1,10 +1,5 @@
 package com.niit.java23;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -14,7 +9,7 @@ public class Main {
         t1.start();//runable
         t2.start();//runable*/
 
-        Thread t1 = new Thread(new Runnable() {
+/*        Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {
                 System.out.println("Thread 1  is running");
@@ -43,9 +38,57 @@ public class Main {
             }
         });
 
+        t1.setPriority(10);
+        t2.setPriority(1);
+        t1.start();
+        t2.start();*/
+
+
+/*
+        Calculator calc = new Calculator();
+        Thread t1 = new Thread() {
+            @Override
+            public void run() {
+                super.run();
+                synchronized (calc) {
+                    calc.setAB(10, 20);
+                }
+            }
+        };
+
+        Thread t2 = new Thread() {
+            @Override
+            public void run() {
+                super.run();
+                synchronized (calc) {
+                    System.out.println(calc.calculator());//
+                }
+            }
+        };
         t1.start();
         t2.start();
+*/
 
+        Person person = new Person();
+        Thread t1 = new Thread() {
+            @Override
+            public void run() {
+                super.run();
+                person.wakeup();
+                person.working();
+            }
+        };
+
+        Thread t2 = new Thread() {
+            @Override
+            public void run() {
+                super.run();
+                person.breakfast();
+            }
+        };
+
+        t1.start();
+        t2.start();
     }
 
 }
