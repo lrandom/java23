@@ -69,7 +69,11 @@ public class Main {
         t2.start();
 */
 
+
+
+
         Person person = new Person();
+        person.setName("Nam");
         Thread t1 = new Thread() {
             @Override
             public void run() {
